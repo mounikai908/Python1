@@ -10,6 +10,7 @@
 
 # x = 8 # int
 # y = 2.8  # float
+
 # z = 1j   # complex
 # # To verify the type of any object in Python, use the type() function:
 # # Example
