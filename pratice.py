@@ -29,7 +29,7 @@ Variable is the name of address where data will be store in it
 
         1.Variable name must start with a latters and underscore character 
         2.A variable name cannot start with a number 
-        3.A variable name can only contain alpha-Numeric characters and underscxres
+        3.A variable name can only contain alpha-Numeric characters and underscore
         4.Variable names are case-sensitive
         5.The reserved words cannot be used naming the variable.
 '''
@@ -47,17 +47,43 @@ Variable is the name of address where data will be store in it
 
 ########### What is data types ##########
 
-'''
-integr data type  ## int is denoted with int() funcation and the hole numbers are called intergers 
-float data type    ## the desiminal nubers are called floate numbers we can denoted with float () funcation 
-boolean data type # boolien is give output True or false 
-complex data type 
-string  ## "mani"
+'''A data type defines the kind of value a variable can hold in programming.
 
-        list data type 
-        set data type 
-        tuple data type 
-        dictonary data type 
+
+integr data type  --->  int is denoted with int() 
+                        An integer data type represents whole numbers—positive, 
+                        negative, or zero—without any fractional or decimal part.
+ 
+float data type   ---> floate numbers we can denoted with float () 
+                        A float data type represents numbers with decimal points,
+                          allowing for precise calculations.
+
+boolean data type ---> The bool data type represents Boolean values, 
+                        which can only be True or False. 
+                        It's useful for logical operations and decision-making.
+ 
+complex data type ---> The complex data type represents numbers with both real and imaginary parts. 
+                        It's mainly used in mathematical computations and scientific applications
+
+string           ---> A string data type represents sequences of characters, such as letters, numbers,
+                         and symbols. It's commonly used for storing text-based data.
+
+
+list data type   --->  List is a collection of elaments with various data types. 
+                        It is mutablle means we caan change the values after creation of list also
+                        List with [] 
+
+Tuple data type  ---> A tuple in python similir to list . The difference bitween the two is that we 
+                        cannot change the elements of a tuple once it is assigned we can change the elements od a list 
+                        Tuple with ()
+
+Set data type    --->  Set is a collection of elements with various datatypes. Set is mutable(we can change)
+                        and its elements are immutable(we can't change ). Set  cannot accept duplicate elements.Set cannot folliw Order 
+                        Set with {}
+
+dictonary data type---> The dictionary data type in Python is a powerful way to store key-value pairs,
+                         allowing fast lookups and structured data storage.
+
 '''
 
 ######### What is oprators ###########
@@ -67,66 +93,136 @@ string  ## "mani"
 An operator in programming is a symbol or keyword that performs 
 a specific operation on one or more operands (values or variables).
 Operators are essential 
+
 for performing calculations, comparisons, logical decisions, 
 and more in code.
 
-1.Arthemitical Operator (Arthimetical operators or +,-,*,/,//̣,%)
-2.Comparisation Operator(Comparasition operators are >,<,<=,>=,==,!=) 
-3.Logical operator (Logical operator is (and, or not ))
-4.Assignment Operator (Assignment operators +=,-=,/=,*=,//=,%=)
-5.Bitwisw operator ()
-6.Membership operator (Membership operator are (in ,not in ))
-7.Identify Operator (Identify Operator are (is ,is not ))
+1.Arthemitical Operator ---> Arithmetic operators are symbols used in programming and databases 
+                             to perform mathematical calculations like addition, subtraction, multiplication, and division.
+                             (Arthimetical operators or +,-,*,/,//̣,%)
+
+2.Comparisation Operator ---> A comparison operator is used in programming and databases to compare two values.
+                              The result is always a Boolean (True or False).
+                              (Comparasition operators are >,<,<=,>=,==,!=) 
+
+3.Logical operator      ---> Logical operators are used in programming and databases to combine multiple conditions
+                             and return a Boolean result (True or False). They help make decisions based on multiple comparisons.
+                             (Logical operator is (and, or not ))
+
+4.Assignment Operator    ---> An assignment operator is used to assign values to variables in programming.
+                              (Assignment operators +=,-=,/=,*=,//=,%=)
+
+5.Bitwisw operator       ---> It looks like you meant "Bitwise operator"—these are used in programming to perform 
+                              operations at the binary level, manipulating individual bits of numbers.
+
+6.Membership operator    --->  A membership operator is used in Python to check if a value is present in a sequence, 
+                               such as a list, tuple, string, or dictionary.
+                                (Membership operator are (in ,not in ))
+
+7.Identify Operator     ---> An identity operator in Python is used to compare the memory address (identity) of two objects, 
+                             checking whether they refer to the same object in memory.
+                             (Identify Operator are (is ,is not ))
 
 '''
 
 ####### What is control statement #########
 '''
 Control statements are 
-1.Conditional statemnt (Conditional statements are (if, elif,else ))
-2.Loping statemnets (Loping statements are (While, For ))
-3.Transfar Statement (Transfar statements are (pass,continue,breake))
+
+1.Conditional statemnt --->  Conditional statements are used in programming to execute a block of code based on 
+                             whether a condition is True or False. They help make decisions in a program by controlling the flow of execution
+                            (Conditional statements are (if, elif,else ))
+
+2.Loping statemnets    ---> these are used in programming to repeat a block of code multiple times until a condition is met.(Loping statements are (While, For ))
+                                A. what is difference bitween while loop and for loop
+                                       *  While loop is used when the number of iterations is unknown beforehand
+                                       *  For loop is used when the numner of iteretions is know beforehand
+
+3.Transfar Statement   --->  these are used in programming to alter the normal flow of execution 
+                             within loops or functions(Transfar statements are (pass,continue,breake))
+
+                             A . What is pass Statement?
+
+                                ---> The pass statement in Python is a placeholder that does nothing when executed. 
+                                     It's used in places where a statement is syntactically required but no action is needed at the moment.
+
+                             B . What is Continue statement ?
+
+                                ---> The continue statement in Python is used inside loops to skip the current iteration 
+                                     and move to the next one without breaking the loop.
+                        
+                             C . What is Break statement ?
+
+                                ---> The break statement in Python is used inside loops to stop execution immediately,
+                                     exiting the loop before it completes all iterations.
+
+
 
 '''
-######## What is List  ############
-
-'''List is a collection of elaments with various data types. 
-It is mutablle means we caan change the values after creation of list also
-List with [] '''
-
-
-###### What is Tuple #######
-'''A tuple in python similir to list . The difference bitween the two is that we 
-cannot change the elements of a tuple once it is assigned we can change the elements od a list 
-Tuple with () '''
-
-
-##### What is set #########
-
-'''Set is a collection of elements with various datatypes. Set is mutable(we can change)
- and its elements are immutable(we can't change ). Set  cannot accept duplicate elements.Set cannot folliw Order 
-   Set with {}  '''
 
 
 
 ###### What is funcation #########
-'''Funcation is collection statements or a pieace of code to perform to a specific task'''
-        # Advantages 
-                # 1. Code Reusability
-                # 2. Improve Modularity 
 
+'''Funcation is collection statements or a pieace of code to perform to a specific task
+
+        ## Advantages 
+
+                 1. Code Reusability
+                 2. Improve Modularity             
+'''
 
 ##### Types of funcations ##########
+
 '''
 1. Buils in funcation
+
 2. User Defined Funcations.
 
-  *** Build in Funcations -- This Funcations are already created by Python people 
+  *** Build in Funcations --> This Funcations are already created by Python people 
         such type of funcation are called as predefin funcations or Build in funcations.
 
-  *** User Defind Funcations -- These Funcations are created by users as per requirements.
+  *** User Defind Funcations --> These Funcations are created by users as per requirements.
 
+  ***Use of funacations***
+        If we want to execute a piece of code for multiple times then we go for functions.
 '''
+
+##### What is Parameter  ######
+
+'''Parameters is just like variable present inside the function while defining
+
+def add(a,b):  --->  # parameters / Formal arguments
+    print(a+b)
+    
+add(10,20) --->   # arguments / actual arguments
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ######### FILE HANDLING ###############
