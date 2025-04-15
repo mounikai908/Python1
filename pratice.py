@@ -144,7 +144,8 @@ Control statements are
                              A . What is pass Statement?
 
                                 ---> The pass statement in Python is a placeholder that does nothing when executed. 
-                                     It's used in places where a statement is syntactically required but no action is needed at the moment.
+                                     It's used in places where a statement is syntactically required but no action is needed
+                                     at the moment.
 
                              B . What is Continue statement ?
 
@@ -159,6 +160,11 @@ Control statements are
 
 
 '''
+
+
+
+
+
 
 
 
@@ -199,17 +205,352 @@ add(10,20) --->   # arguments / actual arguments
 '''
 
 
+## What is call by vale  ##
+
+'''If we made any chages on called function it will 
+not reflect on outside the function when we call with value.'''
+
+## What is call by reference ##
+
+'''If we made any chages on called function it will reflect on outside the function 
+when we call with reference.'''
+
+
+###  NOTE   ####
+
+'''Python does not support Call by value or Call by reference it support by call by object reference.
+ When we pass immutable objects like int,float, tuple it acts like call by value (i.e., modify that object and create new object.) 
+ and when we pass mutable objects like list, dictionary it acts like call by reference (i.e., modify that object and will not create new object.).'''
+
+
+## Whaat is return ##
+
+'''In functions internally return a value by default as None
+
+        return statement only be at end of the function. If we give return statement 
+in the middle after return statement remaining statement will not going to be executed.'''
+
+
+### What is the difference Return And Print in a Funcation ?
+
+'''### Return  :-  Sends a value back to the caller and  terminates Funcation Execution
+
+  ### Print  :- Displays output but doesn't return anything
+
+'''
+
+### What are arguments and keywork Arguments and what are difference  ?
+
+''' 
+    ### Arguments :- Allows a Funcation to accept any number of positional arguments
+
+    ###  Keywodrd Argument :- Allows a Funcation to accept any number of Keyword Rguments
+
+'''
+
+
+### What is the difference between a funcation and a method in python ?
+
+''' A Funcation is an independent block of code defined using def 
+    A method is a funcation associated with a class / object
+'''
+
+
+
+### Types of Arguments  ###
+
+'''There may be several types of arguments which can be passed at the time of function calling.
+•	Default arguments
+•	Keyword arguments
+•	Required or positional arguments
+•	Variable-length arguments'''
+
+        ### 1. Default arguments###
+
+'''                     While defining a function, we can initialize some of the arguments using default values. Passing default value to parameter is optional.
+                        If we pass value to default argument, existing value will be replaced.
+                        
+                        ### How to handel ###
+
+                                Default arguments assign values automatically if no values is passed by the caller.
+
+                                Default values are set in the funcation definition
+                        
+                        '''
+
+
+        ### 2. Keyword Arguments###
+'''             Python allows us to call the function with the keyword arguments. 
+                This kind of function call will enable us to pass the arguments in the random order.'''
+
+
+        ### 3. Positional Arguments:
+'''             Required arguments are the arguments passed to a function in correct positional order. 
+                Here, the number of arguments in the function call should match exactly with the function definition.'''
+
+
+        ### 4. Variable-Length Arguments ###
+'''             In the large projects, sometimes we may not know the number of arguments to be passed in advance. In such cases, Python provides us the flexibility to provide the comma separated values which are internally treated as tuples at the function call.
+                However, at the function definition, we have to define  *variable-name .
+                        •	Non–Keyworded Arguments (*args)
+                        •	Keyworded Arguments (**kwargs)'''
+
+
+
+###  What is the difference between positional arguments and keyword arguments ?
+
+''' ** Positional Arguments are passed in order and must match the funcation's parameters exactly.
+
+    ** Kwyword arguments are passed with names,allowing flexibillity in order.
+        Use keyword arguments when the function has many parameters and order doesn't matter.
+
+'''
+
+
+### How can you make a funcation run at periodic intervals in python ?
+
+'''Use the time.sleep()  method or python schedulerrs like schedule.
+
+        # Example :  
+        
+        import time
+
+        def repeat_task():
+                 while True:
+                        print("Running task...")
+                        time.sleep(5)  # Pauses execution for 5 seconds
+
+# repeat_task()  # Uncomment to run (It will run forever)
+
+'''
+
+### What are nested funcatins in funcations in python ? Can they access variables from the enclosing funcation ?
+'''
+ A nested funcation is a funcation defined inside another funcation.
+  Yes! Nested funcations can access variables from the enclosing funcation(closure concept)
+'''
+
+### What is the difference between mutable and immutable funcation arguments?
+'''** Mutable arguments (lists,dictionaries) can be modified inside a funcation
+   ** Immutable arguments (integers,strings,tuples) Cannot be changed inside a funcation.
+'''
+
+### Whaat is global Funcation ###
+
+'''Local variable has more scope than global variable. 
+If we want to access global variable when local and global with same variable name the we use gobal function.'''
+
+
+### What is the global Keyword in python ?
+
+'''The global keyword allows modifing global variables inside a funcation '''
+
+
+### What are First-class functions in python ?
+
+'''Funcations in python are First-class objects,meaning:
+
+        * They can be assigned to variables
+        * They can be passed as arguments to other funcations
+        * They can be returned from funcations
+'''
+### What is Nested Funcations ###
+
+'''Calling inner functions outside of outer function is not possible to call inner function
+    outside of the function'''
+
+
+### what is Recursive Funcation ###
+
+'''A function that calls by itself is known as recursive function.'''
+
+### Import Funcation ###
+
+'''Import function
+In python we can import and export the data.'''
+
+### Lambda Funcation ###
+
+'''
+lambda function is a small anonymous function.
+Normal function is define using def keyword and lambda function is define using lambda keyword.
+A Lambda function can take any number of arguments, but can only have one expression.'''
+
+###Where we exactly use lambda function?  ###
+'''Sometime as a programmer we have to pass function as an argument to another function,
+   at that particular time we can go for lambda function. These functions mainly used in
+   filter(), map(), reduce().'''
+
+
+### What is Filter Funcation ###
+
+'''The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not.'''
+
+#syntax:
+
+'''filter(function, sequence)
+        ###function:###
+         
+                function that tests if each element of a sequence true or not.
+
+                ###sequence:###
+                
+                sequence which needs to be filtered, it can be sets, lists, tuples, or containers of any iterators.
+
+                ###Note: Filter gives the true output only.'''
 
 
 
 
 
+#### What is the difference between deep copy and Shallow copy ?
+
+'''  ** Shallow Copy copies references (Modifications affect the orginal object)
+
+     ** Deep Copy Creates independent Copies (Chaanges don't affect the original)
+'''
+
+
+### What is Map Funcation ###
+
+'''map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)
+        
+        Syntax :
+                  map(fun, iter)
+                  
+                  fun : It is a function to which map passes each element of given iterable.
+                  iter : It is a iterable which is to be mapped.
+                  Note: In this some modification on every element.'''
+
+
+### Wht is reduce Funcation ###
+
+'''The reduce() function receives two arguments, a function and an iterable. However, 
+it doesn't return another iterable, instead it returns a single value.
+Reduce function present inside the functools, so we have to import it before using reduce function.'''
+
+### Difference between reduce and accumulate ###
+
+'''
+reduce gives final output but accumulate gives iterable output
+accumulate syntax:(iterable,function)
+'''
+
+
+
+### What is the difference between map() , filter() , and reduce() , in python
+
+''' ** Map() -- Applies a funcation to each item in an iterable --->  map(lambda x:x*2,[1,2,3])
+
+    ** Filter() -- Filter items based on a condition   ----> filter(lambda x:x > 2,[1,2,3])
+
+    ** Reduce() -- Accumulates values using a Funcation  ---> reduce(lambda x,y:x+y[1,2,3])
+
+        
+        from functools import reduce
+
+        numbers = [1, 2, 3, 4, 5]
+
+        # map() - Doubles each number
+        doubled = list(map(lambda x: x * 2, numbers))
+        print(doubled)  # Output: [2, 4, 6, 8, 10]
+
+        # filter() - Keeps only even numbers
+        evens = list(filter(lambda x: x % 2 == 0, numbers))
+        print(evens)  # Output: [2, 4]
+
+        # reduce() - Sums up the numbers
+        sum_total = reduce(lambda x, y: x + y, numbers)
+        print(sum_total)  # Output: 15
+    
+'''
+
+
+####  Enumarate Funcation  ####
+
+'''The enumerate() function takes a collection (e.g. a tuple) and returns it as an enumerate object.
+        The enumerate() function adds a counter as the key of the enumerate object.
+        
+        
+    #Syntax:
+
+        enumerate(iterable, start)
+
+        iterable ----------- An iterable object
+        start---------A Number. Defining the start number of the enumerate object. Default 0
+'''
+
+### Generator Funcation ###
+
+'''A generator-function is defined like a normal function, but whenever it needs to generate a value, 
+it does go with the yield keyword rather than return. If the body of a def contains yield, the function automatically becomes a generator function.
+        
+        ##The difference between the yield and the return statement in Python is:
+Return: A function that returns a value at once. The return statement returns a value and exits the function altogether.
+Yield: A function that yields values repeatedly. The yield statement pauses the execution of a function and returns a value.
+When called again, the function continues execution from the previous yield. A function that yields values is known as a generator.'''
+
+
+
+### What is the difference between yield and return ?
+
+'''
+**FEATURE               YIELD                                   RETURN
+ 
+ 1.Purpose              Produces values one at a time           Sends back a single value
+ 2.STATE                Keep funcation state intact             Ends funcation execution completely
+ 3.EFFICIENCE           Saves memory,good for large datasets    Uses stand execution flow
+
+
+'''
+### What is the difference between local and global variable in python ?
+
+''' ** Local variables are declared inside a funcaton and can only be accessed with in the funcation.
+
+    ** Global variable are declared outside any funcation and can be accessed anywhere in the program.
+'''
 
 
 
 
 
+### What is Modules   ###
+'''In Python, a module is a file that contains Python code, such as functions, classes, variables, and runnable code.'''
 
+### Requirement:  ###
+
+'''If we want to reuse the code then we go for function, but if we want to reuse group of variables, functions and classes in another file then we go for module.'''
+
+
+### Types of Modules:  ####
+
+'''1.	Standard Modules or built in Modules
+
+               These modules is already available inside python software.
+	Ex: os, sys, math etc
+     
+   2.	User Defined Modules
+
+                These Modules which is created by user as per requirement.
+	Ex: sample, cal etc'
+    
+   3.	3rd party Modules
+   
+             These modules provided by 3rd party vendor, it is available on internet so we have to download it by using pip (i.e., pip install numpy) we cannot directly proceed with import.
+	Ex: Numpy, pandas, matplotlib etc.   
+   
+   '''
+
+ 
+###  Module Aliasing:  ###
+
+'''•	Giving another name to module is called module aliasing
+        Ex: import sample as sam'''
+
+###   Module Member Aliasing:   ###
+
+'''•	Giving another name to module member is called module member aliasing.
+        Ex: from sample import add as a, sub as s'''
 
 
 
